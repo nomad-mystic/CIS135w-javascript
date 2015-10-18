@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>String Variables</title>
+</head>
+
+<body>
+
+<script>
+
+
+/*
+The purpose of this script is to demonstrate the use of variables, specifically string variables.
+Uncomment each line or lines of code as needed.
+*/
+
+var sFirstName; // declare the variable
+var sLastName;
+
+// sFirstName = "Bob"; // assign a value to the variable
+
+// alert(sFirstName); // display the contents (value) of the variable in a popup
+// //alert ("sFirstName"); // INCORRECT because sFirstName has quotes around it
+
+
+// // NEXT:
+// document.write (sFirstName); // write the variable contents to the webpage
+// document.write ("<br/>");
+
+
+// NEXT:
+//sFirstName = "Jack"; // >>> Notice that when you assign something a string variable, the value always has quotes around it. Use double-quotes.
+//alert (sFirstName);
+
+
+// NEXT:
+//document.write (sFirstName);
+//document.write ("<br/>");
+
+
+// NEXT:
+//document.write (sFirstName + "<br/>");
+
+
+// NEXT:
+// document.write ("Your name is " + sFirstName); // concatenating one string to another
+// document.write ("<br/>");
+
+
+
+// NEXT:
+// Remove the ending quote on the previous line of code, and you will see that Firefox's Error Console gives you an error.
+// Then put the quote back to correct the error
+
+
+// NEXT:
+// Technically, all variables should be declared together to make them easy to find.  We're making an exception here for demonstration purposes.
+
+// sLastName = "Smith";
+
+// // document.write ("Your name is " + sFirstName + " " + sLastName + "<br/>");  // concatenating 5 strings to one another
+
+
+// // NEXT:
+
+
+// var sAge;
+
+// sAge = "22"; // Do Age instead of sAge to see a runtime error
+
+// document.write ("Your name is <strong>" + sFirstName + " " + sLastName + "</strong> and you are <strong>" + sAge + "</strong> years old.");
+// document.write ("<br/>");
+
+
+
+// NEXT: Working with the JavaScript prompt() function
+
+
+// sFirstName = prompt ("What is your first name?");
+// sLastName = prompt ("What is your last name?");
+// sAge = prompt ("How old are you?");
+
+// document.write ("Your name is <strong>" + sFirstName + " " + sLastName + "</strong> and you are <strong>" + sAge + "</strong> years old.<br/>");
+
+
+// NEXT: Adding to an existing var (w/o wiping out what's already in there.)
+var sSentence;
+var sWord;
+
+// sSentence = "";
+
+// sWord = prompt ("Give me a new Word");
+// sSentence = sSentence +  " " + sWord;
+// alert (sSentence); // >>> alerts can be incredibly useful for debugging.
+
+
+
+// NEXT:
+// sWord = prompt ("Give me a new Word");
+// sSentence = sSentence + " " + sWord;
+// alert (sSentence);
+
+
+
+// NEXT:
+//sWord = prompt ("Give me a new Word");
+//sSentence = sSentence + " " + sWord;
+//alert (sSentence);
+
+
+
+// NEXT:
+//sWord = prompt ("Give me a new Word");
+//sSentence = sSentence + " " + sWord;
+//alert (sSentence);
+
+// NEXT: Make it way more flexible and powerful with a loop.  You'll learn about loops a little later in the course, so we're just having a little fun here.
+
+sWord = "x";
+while (sWord !== "") {
+	sWord = prompt ("Give me a new Word");
+	sSentence = sSentence + " " + sWord;
+}
+
+alert (sSentence);
+
+
+</script>
+</body>
+</html>

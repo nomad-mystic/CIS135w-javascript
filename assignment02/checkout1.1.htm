@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--
+DO NOT DELETE ANYTHING IN THIS FILE, INCLUDING MY COMMENTS.
+ADD THE CODE YOU NEED TO ADD IN THE EXACT PLACE WHERE YOU ARE INSTRUCTED BELOW.
+-->
+<title>Checkout 1.1</title>
+<style type="text/css">
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #fffff0;
+}
+
+h1 {
+	border: solid black;
+	border-width: 1px 0;
+	color: #fffff0;
+	background-color: #666;
+	padding: 10px;
+	margin-bottom: 0;
+}
+
+#divMain {
+	padding: 10px;
+}
+
+h2 {
+	color: #600;
+}
+/* My Styles -------*/
+#checkout {
+	font-size: 2em;
+	text-align: center;
+}
+p { 
+	font-size: 2em;
+	line-height: .5em;
+
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Checkout 1.1</h1>
+
+<div id="divMain">
+
+	<script>
+	//<![CDATA[
+	/*jsl:option explicit*/
+	/*jsl:declare addEventListener*//*jsl:declare alert*//*jsl:declare blur*//*jsl:declare clearInterval*//*jsl:declare clearTimeout*//*jsl:declare close*//*jsl:declare closed*//*jsl:declare confirm*//*jsl:declare console*//*jsl:declare Debug*//*jsl:declare defaultStatus*//*jsl:declare document*//*jsl:declare event*//*jsl:declare focus*//*jsl:declare frames*//*jsl:declare getComputedStyle*//*jsl:declare history*//*jsl:declare Image*//*jsl:declare length*//*jsl:declare location*//*jsl:declare moveBy*//*jsl:declare moveTo*//*jsl:declare navigator*//*jsl:declare open*//*jsl:declare opener*//*jsl:declare opera*//*jsl:declare Option*//*jsl:declare parent*//*jsl:declare Number*//*jsl:declare parseInt*//*jsl:declare print*//*jsl:declare prompt*//*jsl:declare resizeBy*//*jsl:declare resizeTo*//*jsl:declare screen*//*jsl:declare scroll*//*jsl:declare scrollBy*//*jsl:declare scrollTo*//*jsl:declare setInterval*//*jsl:declare setTimeout*//*jsl:declare status*//*jsl:declare top*//*jsl:declare window*//*jsl:declare XMLHttpRequest*/
+
+
+	// Your code goes here
+	// DO IT: Declare your variables
+		var sName;
+		var fQuantity;
+		var fPrice;
+		var fTotal = 0;
+		var fSubTotal = 0;
+	// DO IT: Prompt for the info you need for the first item
+		sName = prompt("What is the name of the first item?");
+		fPrice = Number(prompt("What is the price of the first item?"));
+		fQuantity = Number(prompt("What is the quantity of the first item?"));
+	// DO IT: Convert variables to numbers as necessary
+
+	//  DO IT: Calculate the subtotal
+		fTotal += fPrice * fQuantity;
+		fSubTotal = fPrice * fQuantity ;
+	//  DO IT: Write the info to the page
+		document.write("<p>" + sName + ": " + fQuantity + " at $" + fPrice.toFixed(2) + " = $" + fSubTotal.toFixed(2) + "</p>" + "<br>");
+
+	//  DO IT: Repeat the necessary code for the second item
+		sName = prompt("What is the name of the second item?");
+		fPrice = Number(prompt("What is the price of the second item?"));
+		fQuantity = Number(prompt("What is the quantity of the second item?"));
+
+	// Calculate the subtotal
+		fTotal += fPrice * fQuantity;
+		fSubTotal = fPrice * fQuantity;
+	// Write the info to the page
+		document.write("<p>" + sName + ": " + fQuantity + " at $" + fPrice.toFixed(2) + " = $" + fSubTotal.toFixed(2) + "</p>" + "<br>");
+
+	
+		
+
+	// Third Item
+		sName = prompt("What is the name of the third item?");
+		fPrice = Number(prompt("What is the price of the third item?"));
+		fQuantity = Number(prompt("What is the quantity of the third item?"));
+	
+	// Calculate the Subtotal
+		fTotal += fPrice * fQuantity;
+		fSubTotal = fPrice * fQuantity;
+	
+	// Write the info to the page
+		document.write("<p>" + sName + ": " + fQuantity + " at $" + fPrice.toFixed(2) + " = $" + fSubTotal.toFixed(2) + "</p>" + "<br>");
+	
+	// write an <hr> tag to the page
+		document.write("<hr>");
+
+	// write the total and thank you message
+		document.write("<p>You total is $" + fTotal.toFixed(2) + "</p>");
+		document.write("<h1 id='checkout'>" + "Thank You For Shopping with us here at Nomad Mystic's" + "</h1>");
+	//]]>
+	</script>
+
+</div><!-- divMain -->
+
+</body>
+</html>

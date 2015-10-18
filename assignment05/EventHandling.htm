@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Event Handling</title>
+
+<style type="text/css">
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+
+<script>
+/*
+Your objective is to convert the old style "built-in" event handlers to *proper* JavaScript event handlers.  We are trying to separate structure from behavior.  If you read the Course Notes, you'll know exactly what I'm talking about.
+Set up the event handlers in the Init() function and delete any unnecessary code from the HTML.
+Use anonymous functions for the event handlers (except for Bart).
+
+Remember to indent properly.
+Every operator should have a space before and after it.
+Change single quotes to double quotes for consistency.
+Anonymous functions end with a semicolon.
+*/
+var g_body;
+
+
+// The following event handler will cause the Init() function to execute when the webpage is done loading
+window.onload = Init;
+
+function Init() {
+
+	// Now that the page is done loading, we can set up event handlers for objects on the page
+
+	// DO IT: grab hold of the body object and assign it to the global variable named g_body.  We'll be making use of the body object in the code that follows
+	g_body = document.getElementById("body");
+
+
+	// DO IT: Set up all the necessary event handlers as specified above
+	// Variables 
+	
+
+	var aPromptForBGColor = document.getElementById("aPromptForBGColor");
+	aPromptForBGColor.onclick = 
+		function() {
+			var sColor;
+			
+			sColor = prompt("Enter a color");
+			g_body.style.backgroundColor = sColor;
+			
+			return false;
+		}; // End aPromptForBGColor onclick 
+	
+	var spanClick = document.getElementById("spanClick");
+	spanClick.onclick = 
+		function() {
+			g_body.style.backgroundColor = "#0f0";
+		
+		}; // End spanClick
+
+	var spanDoubleClick = document.getElementById("spanDoubleClick");
+	spanDoubleClick.ondblclick = 
+		function() {
+			g_body.style.backgroundColor = "#fff";
+		
+		}; // End spanDoubleClick
+
+	var spanChangeFontColor = document.getElementById("spanChangeFontColor");
+	spanChangeFontColor.onclick = 
+		function() {
+			g_body.style.color = "green";
+		
+		}; // End spanChangeFontColor onclick 
+	spanChangeFontColor.ondblclick = 
+		function() {
+			g_body.style.color = "black";
+		
+		}; // End spanChangeFontC= olor onclick   
+
+	var h1Center = document.getElementById("h1Center");
+	h1Center.onclick = 
+		function() {
+			this.style.textAlign = "center";
+		
+		}; // End h1Center 
+
+	var h2Red = document.getElementById("h2Red");
+	h2Red.onclick = 
+		function() {
+			this.style.color = "red";
+		
+		}; // End h2Red onclick 
+
+	var spanFontSize = document.getElementById("spanFontSize");
+	spanFontSize.onmouseover = 
+		function() {
+			this.style.fontSize = "2em";
+		
+		}; // End spanFontSize.onmouseover
+	spanFontSize.onmouseout = 
+		function() {
+			this.style.fontSize = "1em";
+		
+		}; // spanFontSize.onmouseout
+
+	var txtName = document.getElementById("txtName");
+	txtName.onfocus = 
+		function() {
+			this.style.backgroundColor = "yellow";
+		
+		}; // End txtName.onfocus
+	txtName.onblur = 
+		function() {
+			this.style.backgroundColor = "white";
+		
+		}; // End txtName.onblur
+
+	var btnClick1 = document.getElementById("btnClick1");
+	btnClick1.onclick = 
+		function() {
+			alert("You clicked my button!");
+		
+		}; // End btnClick1 
+
+	var btnClick2 = document.getElementById("btnClick2");
+	btnClick2.onlclick = Bart;
+
+} // function Init()
+
+
+function Bart() {
+	alert ("You clicked Bart!");
+}
+
+
+</script>
+
+</head>
+
+<body id="body">
+<form>
+
+<h1>Event Handling</h1>
+
+<a href="#" id="aPromptForBGColor">Prompt for a background color</a>
+<br><br>
+
+<span id="spanClick">Click me once to change the background color to green</span>
+<br><br>
+
+<span id="spanDoubleClick">Click me twice to change the background color to white</span>
+<br><br>
+
+<span id="spanChangeFontColor">Click me once to change the body font color to green. Double-click me to change the font color to black.</span>
+<br><br>
+
+<h1 id="h1Center">Click me to align to center</h1>
+
+<h2 id="h2Red">Click me to change to red</h2>
+
+<span id="spanFontSize">Roll on me to change font size</span>
+<br><br>
+
+Enter your name: <input type="text" id="txtName">
+<br><br>
+
+<input type="button" value="Click Me!" id="btnClick1">
+<br><br>
+
+<input type="button" value="Click Me!" id="btnClick2" onclick="Bart();">
+
+</form>
+</body>
+</html>

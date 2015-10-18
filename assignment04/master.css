@@ -1,0 +1,179 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 90%;
+	background: #efe;
+}
+
+div#wrapper {
+	width: 400px;
+	margin: 2em auto;
+}
+
+h1 {
+	font-size: 1.5em;
+	margin-bottom: 0.75em;
+}
+
+h3 {
+	margin-bottom: 0.5em;
+}
+
+h4 {
+	font-size: 1.2em;
+	margin-top: 1em;
+}
+
+div#divWelcome {
+	color: #ac2b2b;
+	font-size: 1.3em;
+	min-height: 1.2em;
+	border-bottom: 2px solid black;
+	padding-bottom: 0.1em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+div#divItem, div#divAllItems {
+	border: 3px ridge black;
+	margin-bottom: 2em;
+	background: #6F9;
+}
+
+table {
+	border: none;
+}
+
+table#tblItem {
+	padding: 0.2em;
+	width: 100%;
+	border-spacing: 5px;
+}
+
+table#tblItem th {
+	text-align: right;
+}
+
+table#tblItem th:first-child {
+	text-align: left;
+}
+
+table#tblItem td:nth-child(1) input {
+	width: 100%;
+}
+
+table#tblItem td:nth-child(2) {
+	width: 3em;
+}
+
+table#tblItem td:nth-child(2) input {
+	width: 100%;
+}
+
+table#tblItem td:nth-child(3) {
+	width: 5em;
+}
+
+table#tblItem td:nth-child(3) input {
+	width: 100%;
+}
+
+table#tblItem td:nth-child(4) {
+	width: 6em;
+}
+
+table#tblItem td:nth-child(4) input {
+	width: 100%;
+}
+
+
+table#tblItem td {
+	padding: 0;
+}
+
+table#tblItem tr, table#tblItem td {
+	text-align: left;
+}
+
+table#tblItem #txtPrice {
+	text-align: right;
+}
+
+table#tblItem #txtQty {
+	text-align: right;
+}
+
+
+/* *********************** */
+div#divAllItems {
+	padding: 0 0.6em;
+}
+
+table#tblAllItems {
+	border-collapse: collapse;
+	background: #9FF;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+	width: 100%;
+	border-spacing: 2px;
+}
+
+table#tblAllItems {
+	border: 2px solid black;
+}
+
+table#tblAllItems td, table#tblAllItems th {
+	border: 1px solid black;
+	padding: .1em .3em;
+}
+
+table#tblAllItems th {
+	background: #6cc;
+	border-bottom-width: 2px;
+}
+
+table#tblAllItems #thItem {
+	text-align: left;
+}
+
+table#tblAllItems #thPrice {
+	width: 4.6em;
+	text-align: right;
+}
+
+table#tblAllItems #thQty {
+	width: 3em;
+	text-align: right;
+}
+
+table#tblAllItems #thSubtotal {
+	width: 5em;
+	text-align: right;
+}
+
+table#tblAllItems td {
+	text-align: right;
+}
+
+table#tblAllItems td:first-child {
+	text-align: left;
+}
+
+input#btnTotal, input#btnReset {
+	display: block;
+	margin-right: 0;
+	margin-left: auto;
+	margin: 1em 0 0 auto;
+}
+
+div#divOutput {
+	background: #7fb;
+	border: 3px ridge black;
+	margin-top: 1em;
+	padding: 0.5em;
+	min-height: 3em;
+}

@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding: 2em;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 90%;
+	background-color: #565;
+}
+
+h1 {
+	margin-bottom: 0.8em;
+}
+
+div#divContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 350px;
+}
+
+table {
+	width: 100%;
+	margin-bottom: 2em;
+}
+
+th, td {
+	border: 2px solid black;
+}
+
+table th {
+	font-size: 1.1em;
+	font-weight: bold;
+	background-color: #7fb;
+	padding: 0.2em;
+	border: 3px solid black;
+}
+
+table tr th:first-child {
+	text-align: left;
+}
+
+table input[type="text"] {
+	padding: 0.2em;
+	border: none;
+	background: #efe;
+}
+
+input#txtName {
+	width: 95%;
+	text-align: left;
+}
+
+input#txtQuantity {
+	width: 35px;
+	text-align: right;
+}
+
+input#txtPrice {
+	width: 60px;
+	text-align: right;
+}
+
+input#txtSubtotal, input#txtTotal, input#btnEnterItem, input#btnNewItem {
+	width: 85px;
+	text-align: right;
+}
+
+input#txtSubtotal {
+	background-color: #7fc;
+}
+
+input#txtTotal {
+	font-weight: bold;
+	font-size: 1.1em;
+	color: #633;
+	background-color: #5da;
+}
+
+input#btnEnterItem {
+	text-align: center;
+	width: 100%;
+}
+
+table tr#trTotal td:first-child {
+	font-size: 1.3em;
+	font-weight: bold;
+	text-align: left;
+	letter-spacing: 0.2em;
+	border: 0;
+	padding-left: 0.6em;
+}
+
+table tr:last-child td {
+	border: 0;
+}
+
+input#btnCheckout {
+	font-size: 1.5em;
+	display: block;
+	width: 7em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+div#divOutput {
+	background: #7fb;
+	border: 3px ridge black;
+	margin: 1em 0;
+	padding: 0.5em;
+	min-height: 3em;
+}
+
+div#divOutput p {
+	font-size: 1.3em;
+	margin:  0.2em 0 1em 0;
+	padding-top: 0.3em;
+	border-top: 2px solid black;
+}
+
+input#btnReset {
+	display: block;
+	margin-left: auto;
+	margin-right: 0;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Checkout 3.0</title>
+
+<link href="master.css" rel="stylesheet" type="text/css">
+<script src="checkout3.js"></script>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+	<h1>Checkout 3.0</h1>
+
+	<div id="divPhone">
+		<form onsubmit="return CheckPhone();">
+			<label>Customer Phone:</label> <input type="text" id="txtPhone" size="10">
+			<input id="btnCheckPhone" type="submit" value="Enter">
+		</form>
+	</div>
+
+	<div id="divWelcome"></div>
+
+	<div id="divErrors"></div>
+
+	<form onsubmit="return RingUpItem();">
+
+		<h3>Enter Item Information</h3>
+
+		<div id="divItem">
+			<table id="tblItem">
+				<tr>
+					<th scope="col">Item</th>
+					<th scope="col">Qty</th>
+					<th scope="col">Price</th>
+					<th scope="col"><br></th>
+				</tr>
+				<tr>
+					<td><input id="txtItem" type="text"></td>
+					<td><input id="txtQty" type="text"></td>
+					<td><input id="txtPrice" type="text"></td>
+					<td><input id="btnEnterItem" type="submit" value="Enter"></td>
+				</tr>
+			</table>
+		</div>
+
+		<h3>Items Purchased</h3>
+
+		<div id="divAllItems">
+			<div id="divSimpleItems"></div>
+			<table id="tblAllItems">
+				<tr>
+					<th id="thItem">Item</th>
+					<th id="thQty">Qty</th>
+					<th id="thPrice">Price</th>
+					<th id="thSubtotal">Subtotal</th>
+				</tr>
+			</table>
+		</div>
+
+		<input id="btnTotal" type="button" value="Display Grand Total" onclick="GrandTotal();">
+
+		<div id="divOutput"></div>
+
+		<input id="btnReset" type="reset" value="New Customer" onclick="NewCustomer();">
+	</form>
+
+</div><!-- wrapper -->
+
+</body>
+</html>

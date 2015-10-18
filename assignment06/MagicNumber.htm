@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Magic Number</title>
+
+<style type="text/css">
+body {
+	font-family: arial, helvetica, sans-serif;
+}
+form {
+	background-color: #4ef;
+	width: 600px;
+	border: 3px ridge red;
+	margin: 5em auto 0 auto;
+	padding-bottom: 10px;
+	text-align: center;
+	min-height: 350px;
+}
+
+div#divErrors {
+	font-size: 130%;
+	color: white;
+	background: #f00;
+	width: 80%;
+	margin: 1em auto 1em auto;
+}
+
+#imgPrize {
+	cursor: pointer;
+}
+</style>
+
+<script src="http://spot.pcc.edu/~mpassala/AllCourses/utilities.js"></script>
+<script src="main.js"></script>
+</head>
+
+<body>
+
+<form name="frmMain">
+
+	<h1>Magic Number</h1>
+
+	<div id="divErrors"></div>
+
+	Enter your First Name: <input type="text" id="txtName" name="txtName" size="15"><br><br>
+
+	Enter a 5-digit Number: <input type="text" id="txtNumber" name="txtNumber" size="5"><br><br>
+
+	Select an Ice Cream Flavor:
+	<select id="selIceCream">
+		<option selected="selected" value="Vanilla">Vanilla</option>
+		<option value="Chocolate">Chocolate</option>
+		<option value="Strawberry">Strawberry</option>
+		<option value="Rocky Road">Rocky Road</option>
+		<option value="Chunky Monkey">Chunky Monkey</option>
+		<option value="Pizza">Pizza</option>
+		<option value="Garlic">Garlic</option>
+		<option value="Pig's Feet">Pig's Feet</option>
+		<option value="Broccoli">Broccoli</option>
+		<option value="Soap">Soap</option>
+	</select>
+
+	<h2>Did you win a prize?</h2>
+	<img id="imgPrize" src="" alt="question mark"	>
+
+	<h2 id="h2Msg"></h2>
+
+	<input type="checkbox" id="chkExtraChallenge" name="chkExtraChallenge">Extra Challenge
+
+</form>
+
+</body>
+</html>
